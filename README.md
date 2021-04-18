@@ -1,4 +1,7 @@
 # scoreboard
+
+Link : https://omkargb.github.io/scoreboard/
+
 IPL theme scoreboard with some js DOM events. 
 
 Just for fun and practice purpose..
