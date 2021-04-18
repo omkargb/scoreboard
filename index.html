@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family:Fira sans; background-image: url('assets/img/ground.jpg'); background-repeat:no-repeat; background-attachment:fixed; background-size:cover; " >
+    <br>
+    <div class="container" >
+        <div class="row fixed-bottom bg-light p-1" Style="opacity:0.98;">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 justify-content-center align-items-center order-1 text-center ">
+			<img class="rounded img-fluid " src="" width="90vw" id="timg1">			
+
+			</div>
+			
+            <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 order-3 order-sm-3 order-md-3 order-lg-2 order-xl-2" >
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 text-capitalize align-self-center order-2 order-sm-2 order-md-2 order-lg-1 order-xl-1">
+                        <div class="card p-2"  id="t1bg1">
+						<h6><u>batsman1</u><span class="text-right text-secondary float-right">10</span>
+							<span class="text-right float-right"><b>14&nbsp;</b></span>
+						</h6>
+                       <h6>batsman2<span class="text-right text-secondary float-right">20</span>
+							<span class="text-right float-right"><strong>24&nbsp;</strong></span>
+					   </h6>
+						</div>
+                    </div>
+                   
+				   <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 order-1 order-sm-1 order-md-1 order-lg-2 order-xl-2">
+
+                        <div class="card" >
+                            <h4 id="t1bg2" class="p-1">
+							<span class="border-right" id="tm1"> T1 </span>
+							<span><b>&nbsp;123 - 4</b></span>
+							<span class="float-right border-left"><h5>&nbsp;15.5&nbsp;</h5></span>							
+							<span class="float-right border-left"><h5>&nbsp;P2&nbsp;</h5></span>
+							</h4>
+							
+                            <div class="carousel slide carousel-fade text-center " data-ride="carousel" data-interval="5000" data-pause="false" data-keyboard="false" id="carousel-1">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+										<h6 class="text-center text-dark">Target &nbsp;<strong>135</strong></h6>
+									</div>
+                                    <div class="carousel-item">
+										<h6 class="text-center text-dark"><strong>To win : </strong>need<strong> 12 </strong>more from<strong> 25 </strong>balls</h6>
+									</div>
+                                    <div class="carousel-item">
+										<h6 class="text-center"><b id="tmf1" class="">Team1</b> vs <b id="tmf2" class="">Team2</b></h6>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+				   <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 align-self-center order-3 order-sm-3 order-md-3 order-lg-3 order-xl-3">
+                        <div class="card ">
+						<h6 class="p-2"  id="t2bg">
+						Bowler<span class="border-left float-right">&nbsp;3.5</span>
+						<span class="float-right">1 - 26&nbsp;</span>
+						</h6>
+                        <h6 class="" >&nbsp;<span id="runs" class="border border-dark rounded p-1"></span>&nbsp;</h6>
+						
+                        <!-- <h5 class="text-center border rounded d-inline-block">&nbsp;2&nbsp;</h5>
+                        <h5 class="text-center text-warning border rounded d-inline-block">&nbsp;4&nbsp;</h5>
+                        <h5 class="text-center text-danger border rounded d-inline-block">&nbsp;W&nbsp;</h5>
+                        <h5 class="text-center text-success border rounded d-inline-block">&nbsp;6&nbsp;</h5>
+                        <h5 class="text-center text-info border rounded d-inline-block">&nbsp;wd&nbsp;</h5>
+                        <h5 class="text-center border rounded d-inline-block">&nbsp; &nbsp;&nbsp;</h5> -->
+						</div>
+                    </div>
+                </div>
+            </div>
+			
+            <div class="col-6 col-sm-6 col-md-6 col-lg-1 col-xl- order-2 justify-content-center align-items-center order-sm-2 order-md-2 order-lg-3 order-xl-3 text-center">
+			<img class="rounded img-fluid" src="" width="90vw" id="timg2">
+			</div>
+			
+        </div>
+
+
+	
+	
+	
+	
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title text-center">Theme change</h4>
+                <div class="form-row">
+                    <div class="col-12 col-md-6">
+                        <div class="border rounded"><span class="btn btn-outline-secondary btn-block btn-sm" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" role="button" href="#collapse-1">Team - Batting</span>
+                            <div class="collapse text-capitalize p-2" id="collapse-1">
+							<form method="post">
+							<div class="row">
+								<div class="col-3">
+								<Input class=""  type="radio" id="th11" name="gender" value="th11" onclick="btone(); disth21();"> 
+								<label for="th11">MI </label>
+								</div>
+								<div class="col-3">
+								<Input class=""  type="radio" id="th12" name="gender" value="th12" onclick="bttwo(); disth22();"> 
+								<label for="th12">CSK </label>
+								</div>
+								<div class="col-3">
+								<Input class=""  type="radio" id="th13" name="gender" value="th13" onclick="btthr(); disth23();"> 
+								<label for="th13">KXIP </label>
+								</div>
+								<div class="col-3">
+								<Input class=""  type="radio" id="th14" name="gender" value="th14" onclick="btfr(); disth24();"> 
+								<label for="th14">KKR </label>
+								</div>
+							</div>
+								
+							</form>
+                            </div>
+                        </div>
+					<br>						
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class=" border rounded"><span class="btn btn-outline-secondary btn-block btn-sm" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" role="button" href="#collapse-2">Team - bowling</span>
+                            <div class="collapse text-capitalize p-2" id="collapse-2">
+							<form method="post">							
+								
+							<div class="row">
+								<div class="col-3">
+								<Input class=""  type="radio" id="th21" name="gender" value="th21" onclick="bwone(); disth11();"> 
+								<label for="th21">MI </label>
+								</div>
+								<div class="col-3">								
+								<Input class=""  type="radio" id="th22" name="gender" value="th22" onclick="bwtwo();  disth12();"> 
+								<label for="th22">CSK </label>
+								</div>
+								<div class="col-3">								
+								<Input class=""  type="radio" id="th23" name="gender" value="th23"  onclick="bwthr();  disth13();"> 
+								<label for="th23">KXIP </label>
+								</div>
+								<div class="col-3">								
+								<Input class=""  type="radio" id="th24" name="gender" value="th24"  onclick="bwfr();  disth14();"> 
+								<label for="th24">KKR </label>
+								</div>
+							</form>								
+                            </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/change.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+<script>
+
+</script>
+
+</html>
