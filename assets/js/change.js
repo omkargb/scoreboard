@@ -1,14 +1,27 @@
-
-var ovb = 5
+var ovb = 5;
 var i;
-var myarr=['1','2','3','4','6','•','wd','nb','W'];
+var myarr=['1','2','3','4','6','•','wd','W','nb'];
+var ar=[];
 for(i=0;i<ovb;i++)
 {
 	var run = myarr[(Math.random() * myarr.length) | 0];
-	document.getElementById("runs").innerHTML= run;
-	//if(run=='wd' || run=='nb')
-	//	{	ovb++;		}
-
+	ar.push(run);
+	 var scr=ar.join(" &nbsp; ");
+	 console.log(scr);
+		if(run=='wd')
+		{
+			ovb++;
+			document.getElementById("runs").innerHTML=" "+scr;
+		}
+		if(run=='nb')
+		{
+			ovb++;
+			document.getElementById("runs").innerHTML=" "+scr;
+		}
+		else
+		{
+			document.getElementById("runs").innerHTML=" "+scr;
+		}
 }
 
 var bt1=document.getElementById("t1bg1");		var bt2=document.getElementById("t1bg2");
